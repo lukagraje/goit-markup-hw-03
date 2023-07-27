@@ -1,0 +1,200 @@
+body {
+    font-family: roboto, sans-serif;
+    background-color: #FFFFFF;
+    color: var(--brand-color1);
+    letter-spacing: 0.02em;
+}
+
+:root {
+    --brand-color1: #2E2F42;
+    --brand-color2: #F4F4FD;
+    --brand-color3: #4D5AE5;
+    --brand-color4: #FFFFFF;
+    --brand-color5: #434455;
+    --brand-color6: #E7E9FC;
+    --brand-color7: #404BBF;
+    --brand-color8: #D033FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    border-color: var(--brand-color6);
+    border-bottom: 1px;
+}
+
+
+.web-studio1 {
+    font-family: raleway;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--brand-color1);
+}
+
+.web {
+    color: var(--brand-color3);
+}
+
+.navigation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--brand-color1);
+}
+
+.link1 {
+    color: var(--brand-color1);
+}
+
+/* Nie wiem, czemu tak jest: kolor tekstu elementów w nawigacji zmienia się dopiero wtedy, gdy wrzucę je do osobnej klasy. Tak samo zrobiłem z kontaktami */
+
+.link1:hover,
+.link1:focus {
+    color: var(--brand-color7);
+}
+
+.address {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--brand-color5);
+}
+
+.link2 {
+    color: var(--brand-color5);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.link2:hover,
+.link2:focus {
+        color: var(--brand-color7);
+}
+
+.first-section {
+    background-color: var(--brand-color1);
+}
+
+.head1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--brand-color4);
+}
+
+.order-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--brand-color4);
+    background-color: var(--brand-color3);
+    box-shadow: 0px 4px 4px 0px #00000026;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+}
+
+.order-button:hover,
+.order-button:focus {
+    background-color: var(--brand-color7);        
+}
+
+.head2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.paragraph1 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--brand-color5);
+}
+
+.head3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.what-are-we-doing-list {
+    color: var(--brand-color6);
+    border: 1px;
+    border-color: var(--brand-color6);
+}
+
+.third-section {
+    background-color: var(--brand-color2);
+}
+
+.head4 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.paragraph2 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--brand-color5);
+    text-align: center;
+}
+
+.web-studio2 {
+    font-family: raleway;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--brand-color2);
+}
+
+.paragraph3 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--brand-color2);
+}
+
+.footer {
+    background-color: var(--brand-color1);
+}
+
+.portfolio-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    border-style: 1px;
+    border-color: var(--brand-color6);
+    color: var(--brand-color3);
+    background-color: var(--brand-color6);
+    background-color: var(--brand-color2);    
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.04em;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--brand-color4);
+    background-color: var(--brand-color7);
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 2px 1px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
+}
+
+.portfolio-list>img {
+    color: var(--brand-color6);
+    color: var(--brand-color4);
+    border: 1px;
+    border-color: var(--brand-color6)
+}
