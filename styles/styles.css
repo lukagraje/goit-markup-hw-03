@@ -64,13 +64,10 @@ justify-content: space-between;
     list-style-type: none;
 }
 
-
-
 .header {
     border-block-end: var(--brand-color6);
     border-bottom: 1px;
 }
-
 
 .web-studio1 {
     font-family: raleway;
@@ -211,9 +208,8 @@ gap: 8px;
 .our-team-list {
     display: flex;
     padding: 0px 0px 32px 0px;
-    flex-basis: calc((100% - 96px) / 4);
-    gap: 32px;
-}
+    justify-content: space-around;
+    }
 
 
 .third-section {
