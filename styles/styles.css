@@ -1,9 +1,20 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: roboto, sans-serif;
     background-color: #FFFFFF;
     color: var(--brand-color1);
     letter-spacing: 0.02em;
-}
+    }
 
 :root {
     --brand-color1: #2E2F42;
@@ -13,7 +24,12 @@ body {
     --brand-color5: #434455;
     --brand-color6: #E7E9FC;
     --brand-color7: #404BBF;
-    --brand-color8: #D033FF;
+}
+
+.container {
+    width: 1158px;
+    padding: 15px;
+    margin-inline: 0;
 }
 
 a {
@@ -24,8 +40,33 @@ ul {
     list-style: none;
 }
 
+.section {
+    padding-top: 120px;
+    padding-left: 0px;
+    padding-bottom: 120px;
+    padding-right: 0px;
+}
+
+.header-wrapper {
+display: flex;
+justify-content: space-between;
+}
+
+.header-wrapper > nav {
+    display: flex;
+    gap: 2em;
+}
+
+.header-wrapper > nav > .navigation {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+}
+
+
+
 .header {
-    border-color: var(--brand-color6);
+    border-block-end: var(--brand-color6);
     border-bottom: 1px;
 }
 
@@ -36,6 +77,8 @@ ul {
     font-size: 18px;
     line-height: 1.2;
     color: var(--brand-color1);
+    margin-left: 156px;
+    width: 115px;
 }
 
 .web {
@@ -47,13 +90,25 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     color: var(--brand-color1);
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.h1-portfolio {
+    position: absolute;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
 }
 
 .link1 {
     color: var(--brand-color1);
 }
 
-/* Nie wiem, czemu tak jest: kolor tekstu elementów w nawigacji zmienia się dopiero wtedy, gdy wrzucę je do osobnej klasy. Tak samo zrobiłem z kontaktami */
 
 .link1:hover,
 .link1:focus {
@@ -82,6 +137,12 @@ ul {
     background-color: var(--brand-color1);
 }
 
+.first-list {
+display: flex;
+gap: 8px;
+
+
+}
 .head1 {
     font-weight: 700;
     font-size: 56px;
@@ -100,6 +161,7 @@ ul {
     cursor: pointer;
     font-family: inherit;
     letter-spacing: 0.04em;
+    margin: 0 auto;
 }
 
 .order-button:hover,
@@ -111,12 +173,14 @@ ul {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    padding: 0 16px 0 16px;
 }
 
 .paragraph1 {
     font-size: 16px;
     line-height: 1.5;
     color: var(--brand-color5);
+    padding: 0 16px 0 16px;
 }
 
 .head3 {
@@ -126,11 +190,30 @@ ul {
     text-align: center;
 }
 
+.portfolio-container {
+    border: 100px;
+    gap: 8px;
+    padding: 16px;
+
+}
 .what-are-we-doing-list {
     color: var(--brand-color6);
     border: 1px;
     border-color: var(--brand-color6);
+    display: flex;
+    gap: 24px;
+    border: 1px;
+    border-style: solid;
+
 }
+
+.our-team-list {
+    display: flex;
+    padding: 0px 0px 32px 0px;
+    flex-basis: calc((100% - 96px) / 4);
+    gap: 32px;
+}
+
 
 .third-section {
     background-color: var(--brand-color2);
@@ -166,6 +249,14 @@ ul {
 
 .footer {
     background-color: var(--brand-color1);
+    display: flex;
+}
+
+.main-menu {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+   
 }
 
 .portfolio-button {
@@ -181,6 +272,8 @@ ul {
     cursor: pointer;
     font-family: inherit;
     letter-spacing: 0.04em;
+    padding: 12px 24px 12px 24px;
+    border-radius: 4px;
 }
 
 .portfolio-button:hover,
@@ -197,4 +290,11 @@ ul {
     color: var(--brand-color4);
     border: 1px;
     border-color: var(--brand-color6)
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px;
+    gap: 20px;
 }
