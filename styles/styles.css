@@ -51,6 +51,9 @@ ul {
 .header-wrapper {
 display: flex;
 justify-content: space-between;
+height: 72px;
+border-bottom: 1px solid var(--brand-color6);
+align-items: center;
 }
 
 .header-wrapper > nav {
@@ -133,20 +136,33 @@ justify-content: space-between;
 
 .first-section {
     background-color: var(--brand-color1);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.second-section {
+    height: 104px;
 }
 
 .first-list {
 display: flex;
 gap: 8px;
-
-
 }
+
 .head1 {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
     text-align: center;
     color: var(--brand-color4);
+    display: flex;
+    flex-wrap: wrap;
+    width: 496px;
+    margin: 0 auto;    
 }
 
 .order-button {
@@ -160,6 +176,10 @@ gap: 8px;
     font-family: inherit;
     letter-spacing: 0.04em;
     margin: 0 auto;
+    display: flex;
+    padding: 16px 32px;
+    gap: 10px;
+    border-radius: 4px;
 }
 
 .order-button:hover,
@@ -172,6 +192,13 @@ gap: 8px;
     font-size: 20px;
     line-height: 1.2;
     padding: 0 16px 0 16px;
+    width: 264px;
+}
+
+.list-element {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;       
 }
 
 .paragraph1 {
@@ -179,6 +206,9 @@ gap: 8px;
     line-height: 1.5;
     color: var(--brand-color5);
     padding: 0 16px 0 16px;
+    height: 72px;    
+    width: 264px;
+    letter-spacing: 0.02em;
 }
 
 .head3 {
@@ -208,7 +238,8 @@ gap: 8px;
 .our-team-list {
     display: flex;
     padding: 0px 0px 32px 0px;
-    justify-content: space-around;
+    column-gap: 24px;
+    padding: 0px 0px 32px 0px;
     }
 
 
