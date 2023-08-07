@@ -70,6 +70,15 @@ align-items: center;
 .header {
     border-block-end: var(--brand-color6);
     border-bottom: 1px;
+    max-width: 1440px;
+}
+
+.second-section {
+    max-width: 1440px;
+}
+
+.third-section {
+    max-width: 1440px;
 }
 
 .web-studio1 {
@@ -77,8 +86,7 @@ align-items: center;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.2;
-    color: var(--brand-color1);
-    margin-left: 156px;
+    color: var(--brand-color1);    
     width: 115px;
 }
 
@@ -141,11 +149,22 @@ align-items: center;
 .first-section {
     background-color: var(--brand-color1);
     height: 600px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
+    max-width: 1440px;    
+}
 
+.fs-wrapper {
+    display: flex;
+       align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 300px;
+}
+
+.fourth-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 600px;
 }
 
 .ss-wrapper {
@@ -167,8 +186,7 @@ justify-content: space-evenly;
     line-height: 1.1;
     text-align: center;
     color: var(--brand-color4);
-    display: flex;
-    flex-wrap: wrap;
+    height: 120px;
     width: 496px;
     margin: 0 auto;    
 }
@@ -238,6 +256,10 @@ justify-content: space-evenly;
     text-align: center;
 }
 
+.portfolio-section {
+    max-width: 1440px;
+}
+
 .portfolio-container {
     gap: 8px;
     padding: 16px;
@@ -294,6 +316,7 @@ justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 1440px;
 }
 
 .head4 {
@@ -333,6 +356,7 @@ justify-content: space-evenly;
     flex-direction: column;
     padding: 0px;
     justify-content: center;
+    max-width: 1440px;
     }
 
 .footer-wrapper {
@@ -341,7 +365,7 @@ justify-content: space-between;
 flex-direction: column;
 width: 264px;
 height: 112px;
-padding-left: 156px;
+
 }
 
 .main-menu {
