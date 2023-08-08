@@ -28,9 +28,15 @@ body {
 
 .container {
     max-width: 1158px;
-    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+    width: 100%;
+    /* Jak usuwam width: 100%, to mi się centrują elementy w footerze */
+}
+
+.container1 {
+    margin: 0 auto;
+    width: 1440px;
 }
 
 a {
@@ -69,7 +75,6 @@ align-items: center;
 .header {
     border-block-end: var(--brand-color6);
     border-bottom: 1px;
-    max-width: 1440px;
     border-bottom: 1px solid var(--brand-color6);
 }
 
@@ -108,10 +113,16 @@ align-items: center;
 
 .h1-portfolio {
     position: absolute;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+    
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 
 }
 
@@ -207,6 +218,7 @@ justify-content: space-evenly;
     padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
+    border: none;
 }
 
 .order-button:hover,
@@ -225,7 +237,7 @@ justify-content: space-evenly;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-
+    margin-bottom: 8px;
 }
 
 .paragraph1-portfolio {
@@ -257,16 +269,11 @@ justify-content: space-evenly;
     text-align: center;
 }
 
-.portfolio-section {
-    max-width: 1440px;
-}
-
 .portfolio-container {
-    gap: 8px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
+    padding: 32px 16px;
+    border: 1px solid var(--brand-color6);
+    border-top: none;
 
 }
 .what-are-we-doing-list {
@@ -353,12 +360,11 @@ justify-content: space-evenly;
 
 .footer {
     background-color: var(--brand-color1);
-    display: flex;
-    height: 312px;
-    flex-direction: column;
-    padding: 0px;
-    justify-content: center;
-    max-width: 1440px;
+    
+   
+    
+    padding: 100px;
+        
     }
 
 .footer-wrapper {
@@ -367,7 +373,6 @@ justify-content: space-between;
 flex-direction: column;
 width: 264px;
 height: 112px;
-
 }
 
 .main-menu {
@@ -392,6 +397,7 @@ height: 112px;
     letter-spacing: 0.04em;
     padding: 12px 24px 12px 24px;
     border-radius: 4px;
+    border: none;
 }
 
 .portfolio-button:hover,
@@ -410,15 +416,11 @@ height: 112px;
     border-color: var(--brand-color6)
 }
 
-.portfolio-list > li {
-    border: 1px solid var(--brand-color6);
-    border-top: none;
-}
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;    
-    gap: 20px;
+    gap: 48px 24px;
 }
 
 .portfolio-wrapper {
